@@ -1,0 +1,43 @@
+<HTML>
+    <HEAD>
+        <TITLE>
+            Home Page
+        </TITLE>
+    </HEAD>
+        <BODY>
+            <h2>
+                Welcome {{name}}
+            </h2>
+            {% if user[3] == 1 %}
+            <A HREF="myentry.html">Show my Contest Entry Results</A>
+            <br>
+            <A HREF="addentry.html">Add new baking Contest Entry</A>
+            <br>
+            <A HREF="/">Log out</A>
+            {% endif %}
+
+            {% if user[3] == 2 %}
+            <A HREF="myentry.html">Show my Contest Entry Results</A>
+            <br>
+            <A HREF="addentry.html">Add new baking Contest Entry</A>
+            <br>
+            <A HREF="list.html">List Baking Contest Users</A>
+            <br>
+            <A HREF="/">Log out</A>
+            {% endif %}
+
+            {% if user[3] == 3 %}
+            <A HREF="myentry.html">Show my Contest Entry Results</A>
+            <br>
+            <A HREF="add.html">Add new Baking Contest User</A>
+            <br>
+            <A HREF="addentry.html">Add new baking Contest Entry</A>
+            <br>
+            <A HREF="list.html">List Baking Contest Users</A>
+            <br>
+            <A HREF="contestResults.html">Baking Contest Entry Results</A>
+            <br>
+            <A HREF="/">Log out</A>
+            {% endif %}
+        </BODY>
+</HTML>

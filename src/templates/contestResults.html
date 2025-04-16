@@ -1,0 +1,25 @@
+<HTML>
+    <BODY>
+        <table border="1">
+            <thead>
+                <td>Entry Id</td>
+                <td>User Id</td>
+                <td>Number of Baking Items</td>
+                <td>Number of Excellent Votes</td>
+                <td>Number of Ok Votes</td>
+                <td>Number of Bad Votes</td>
+            </thead>
+            {% for row in rows %}
+            <tr>
+                <td>{{row[0]}}</td>
+                <td>{{row[1]}}</td>
+                <td>{{row[2]}}</td>
+                <td>{{row[3]}}</td>
+                <td>{{row[4]}}</td>
+                <td>{{row[5]}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+        <H2><A HREF="home.html">Back to home</A></H2>
+    </BODY>
+</HTML>

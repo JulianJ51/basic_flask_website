@@ -1,0 +1,30 @@
+<HTML>
+    <HEAD>
+        <TITLE>
+            Add new user
+        </TITLE>
+    </HEAD>
+        <BODY>
+            <form action="{{url_for('addrec')}}" method="POST">
+            <H2>
+                Baking contest user information
+            </H2>
+
+            Name<br>
+            <INPUT TYPE="text" name="Name"><br>
+
+            Age<br>
+            <INPUT TYPE="text" name="Age"><br>
+
+            Phone Number<br>
+            <INPUT TYPE="text" name="Number"><br>
+
+            Security Level<br>
+            <INPUT TYPE="text" name="Security"><br>
+
+            Login Password<br>
+            <INPUT TYPE="password" name="Password"><br>
+            <INPUT TYPE="submit"><br>
+            </form>
+        </BODY>
+</HTML>

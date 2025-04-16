@@ -1,0 +1,21 @@
+<HTML>
+    <HEAD>
+        <TITLE>
+            login
+        </TITLE>
+    </HEAD>
+        <BODY>
+            <form action="{{url_for('login')}}" method="POST">
+            <H1>
+                Login
+            </H1>
+            {% if error == 'true' %}
+            Invalid Username and/or Password
+            <br>
+            {% endif %}
+            <INPUT TYPE="text" name="Name"><br>
+            <INPUT TYPE="password" name="Password"><br>
+            <INPUT TYPE="submit" VALUE="Log in"><br>
+            </form>
+        </BODY>
+</HTML>

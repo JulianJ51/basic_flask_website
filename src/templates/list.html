@@ -1,0 +1,23 @@
+<HTML>
+    <BODY>
+        <table border="1">
+            <thead>
+                <td>Name</td>
+                <td>Age</td>
+                <td>Phone Number</td>
+                <td>Security</td>
+                <td>Login Password</td>
+            </thead>
+            {% for row in rows %}
+            <tr>
+                <td>{{row[0]}}</td>
+                <td>{{row[1]}}</td>
+                <td>{{row[2]}}</td>
+                <td>{{row[3]}}</td>
+                <td>{{row[4]}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+        <H2><A HREF="/home.html">Back to home</A></H2>
+    </BODY>
+</HTML>
